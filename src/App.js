@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Tab from './tab/tab'
 
-export default function App() {
-  return (
-    <h1>hello world</h1>
-  )
+class App extends Component{
+  render() {
+    return (
+      <Tab></Tab>
+    )
+  }
 } 
+
+export default App
