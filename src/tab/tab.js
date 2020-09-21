@@ -22,6 +22,9 @@ function Tab() {
   return (
     <div className={styles.tab}>
       <Switch>
+        <Route exact path='/'>
+          <Alarm />
+        </Route>
         <Route path='/game'>
           <Game />
         </Route>

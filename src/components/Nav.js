@@ -2,9 +2,11 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+
+import SportsSoccer from '@material-ui/icons/SportsSoccer';
+import AlarmAdd from '@material-ui/icons/AlarmAdd';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+
 import { useHistory } from 'react-router-dom'
 
 
@@ -15,7 +17,7 @@ const style = makeStyles({
 })
 export default function Nav(onchange) {
   const styles = style()
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(1);
   const history = useHistory();
 
   const handleNav = (e, value) => {
@@ -31,9 +33,9 @@ export default function Nav(onchange) {
       showLabels
       className={styles.nav}
     >
-      <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+      <BottomNavigationAction label="GameList" icon={<SportsSoccer />} />
+      <BottomNavigationAction label="Alarming" icon={<AlarmAdd />} />
+      <BottomNavigationAction label="Me" icon={<AccountCircle />} />
     </BottomNavigation> 
   );
 }
