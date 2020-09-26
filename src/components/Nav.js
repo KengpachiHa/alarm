@@ -22,7 +22,7 @@ export default function Nav(onchange) {
 
   const handleNav = (e, value) => {
     setValue(value)
-    value === 0 && history.push('/game')
+    value === 0 && history.push('/games')
     value === 1 && history.push('/alarm')
     value === 2 && history.push('/my')
   }

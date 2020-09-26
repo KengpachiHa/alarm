@@ -25,7 +25,7 @@ function Tab() {
         <Route exact path='/'>
           <Alarm />
         </Route>
-        <Route path='/game'>
+        <Route path='/games'>
           <Game />
         </Route>
         <Route path='/alarm'>
