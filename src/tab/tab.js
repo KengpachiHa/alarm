@@ -10,10 +10,11 @@ import Nav from '../components/Nav'
 
 const style = makeStyles({
   tab: {
-    height: '100%',
+    // height: '100vh',
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    paddingBottom: "56px"
   }
 });
 

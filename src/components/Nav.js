@@ -12,7 +12,9 @@ import { useHistory } from 'react-router-dom'
 
 const style = makeStyles({
   nav: {
-    //
+    position: 'fixed',
+    bottom: 0,
+    width: "100%",
   }
 })
 export default function Nav(onchange) {
@@ -34,7 +36,7 @@ export default function Nav(onchange) {
       className={styles.nav}
     >
       <BottomNavigationAction label="GameList" icon={<SportsSoccer />} />
-      <BottomNavigationAction label="Alarming" icon={<AlarmAdd />} />
+      <BottomNavigationAction label="Alarm" icon={<AlarmAdd />} />
       <BottomNavigationAction label="Me" icon={<AccountCircle />} />
     </BottomNavigation> 
   );
